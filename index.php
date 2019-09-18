@@ -8,7 +8,7 @@ $email = $_POST["email"];
 $password = $_POST["password"];
 //$confirmpassword = $_POST["confirmpassword"];
 	
-if(in_array($email ,array_column($info, 'email'))) && (in_array($password, array_column($info, "password"))){
+if(in_array($email ,array_column($info, 'email')) && in_array($password, array_column($info, "password"))){
 		//$warning = "This email has been registered";
 	
 	session_start();
