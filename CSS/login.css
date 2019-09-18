@@ -59,17 +59,21 @@
 		}
 
 
-		.content input[type="button"] {
-			border: 0;
-			width: 280px;
-			padding: 14px 10px;
-			border-radius: 20px;
-			background: #205c70;
-			color: white;
+		.content input[type="submit"] {
+			border: 0 !important;
+			width: 280px !important;
+			padding: 14px 10px !important;
+			border-radius: 20px !important;
+			background: #205c70 !important;
+			color: white !important;
 		}
 
-		.content input[type="button"]:hover {
-			background: #092933;
-			color: #205c70;
-			font-weight: 500;
+		.content input[type="submit"]:hover {
+			background: #092933 !important;
+			color: #205c70 !important;
+			font-weight: 500 !important;
+		}
+
+		.loginbutton{
+			 
 		}

@@ -1,21 +1,25 @@
 <?php
 $warning="";
+$loggedIn="";
 if(count($_POST)>0) {
-	$info = json_decode(file_get_contents("info.json"));	
-}
-$email = $_POST["email"];
-// $name = $_POST["name"];
-$password = $_POST["password"];
-//$confirmpassword = $_POST["confirmpassword"];
+	$info = json_decode(file_get_contents("info.json"));
+	$email = $_POST["email"];
 	
-if(in_array($email ,array_column($info, 'email')) && in_array($password, array_column($info, "password"))){
+	$password = $_POST["password"];
+	//$confirmpassword = $_POST["confirmpassword"];
+
+
+	
+	if(in_array($email ,array_column($info, 'email')) && in_array($password, array_column($info, "password"))){
 		//$warning = "This email has been registered";
-	
-	session_start();
-	$_SESSION["user_login"] = $name;
-	header("Location: success.php")
-}else{
-	$warning = "Email or password incorrect";
+		// $name = $info->name;
+		$loggedIn = "Log in successful";
+		session_start();
+		$_SESSION["user_login"] = $name;
+		header("Location: success.php");
+	}else{
+		$warning = "Email or password incorrect";
+	}
 }
 	
 ?>
@@ -34,7 +38,8 @@ if(in_array($email ,array_column($info, 'email')) && in_array($password, array_c
 				<div class="message"><?php if($warning!="") { echo $warning; } ?></div>
 				<input type="text" name="email" placeholder="email" required="">
 				<input type="password" name="password" placeholder="password" required="">
-				<input type="submit" name="submit" value="Login">	
+				<input style="border: 0; width: 280px; padding: 14px 10px; border-radius: 20px; background: #205c70; color: white;" class="loginbutton" type="submit" name="submit" value="Login">	
+				<div class="successmessage"><?php if($loggedIn!="") { echo $loggedIn; } ?></div>
 				<p>New here? <a href="registration.php">Sign Up</a></p>
 			</form>
 		</div>
