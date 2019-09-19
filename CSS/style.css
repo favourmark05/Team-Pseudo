@@ -61,3 +61,13 @@ a{
     color: steelblue;
 }
 
+.content input[type="text"]:hover, .content input[type="password"]:hover, .content input[type="email"]:hover {
+      width: 300px;
+      border-color: 
+    }
+
+
+    .content input[type="text"]:focus, .content input[type="password"]:focus, .content input[type="email"]:focus {
+      border: 2px solid #092933;
+      color: #205c70;
+    }
