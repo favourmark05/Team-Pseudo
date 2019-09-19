@@ -9,6 +9,9 @@ if(!isset($_SESSION['user_login'])){
 <head>
     <title>Login success</title>
     <style>
+      html {
+      height: 100%;
+      }
       body{
         background: url(https://res.cloudinary.com/placeholder30/image/upload/v1568841095/HNG/jon-tyson-Es6wM0ASCAU-unsplash_rbwtsz.jpg);
         background-size: cover;
@@ -23,6 +26,7 @@ if(!isset($_SESSION['user_login'])){
         font-weight: 700px;
         font-family: Courier, monospace;
         color: rgb(245, 245, 245);
+        text-align: center;
 
       }
       button{
@@ -53,11 +57,13 @@ if(!isset($_SESSION['user_login'])){
 
 <body>
     <div id="container">
-    <h2>Dear <?php echo $_SESSION['user_login']?>, You are in!</h2>
+    <h2>You are in!</h2>
   </div>
 
+/*Dear<?php echo $_SESSION['user_login']?>, */
+
    <div >
-  <a href="logout.php"></a><button>Logout</button></a>
+  <a href="logout.php"><button>Logout</button></a>
   </div>
 </body>
 

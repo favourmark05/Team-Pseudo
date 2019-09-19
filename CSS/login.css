@@ -6,7 +6,7 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background: url(file:///C:/Users/HP%20user/Downloads/erik-mclean-Wlfo8S_gkT0-unsplash.jpg);
+			background: url(/assets/background.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -60,18 +60,18 @@
 
 
 		.content input[type="submit"] {
-			border: 0 !important;
-			width: 280px !important;
-			padding: 14px 10px !important;
-			border-radius: 20px !important;
-			background: #205c70 !important;
-			color: white !important;
+			border: 0;
+			width: 280px;
+			padding: 14px 10px;
+			border-radius: 20px;
+			background: #205c70;
+			color: white;
 		}
 
 		.content input[type="submit"]:hover {
-			background: #092933 !important;
-			color: #205c70 !important;
-			font-weight: 500 !important;
+			background: #092933;
+			color: #205c70;
+			font-weight: 500;
 		}
 
 		.loginbutton{

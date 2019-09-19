@@ -9,13 +9,14 @@ if(count($_POST)>0) {
 	//$confirmpassword = $_POST["confirmpassword"];
 
 
-	
+		 
 	if(in_array($email ,array_column($info, 'email')) && in_array($password, array_column($info, "password"))){
-		//$warning = "This email has been registered";
+
+		// $name = $info[0]->name;		
 		// $name = $info->name;
 		$loggedIn = "Log in successful";
 		session_start();
-		$_SESSION["user_login"] = $name;
+		$_SESSION["user_login"] = "You";
 		header("Location: success.php");
 	}else{
 		$warning = "Email or password incorrect";
