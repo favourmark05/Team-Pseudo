@@ -9,16 +9,13 @@ if(!isset($_SESSION['user_login'])){
 <head>
     <title>Login success</title>
     <style>
-      html {
-      height: 100%;
-      }
       body{
         background: url(https://res.cloudinary.com/placeholder30/image/upload/v1568841095/HNG/jon-tyson-Es6wM0ASCAU-unsplash_rbwtsz.jpg);
         background-size: cover;
         background-repeat: no-repeat;
       }
       #container{
-        margin-left: 400px; 
+        margin-left: auto; 
         margin-top: 15%;
       }
       h2{
@@ -26,7 +23,7 @@ if(!isset($_SESSION['user_login'])){
         font-weight: 700px;
         font-family: Courier, monospace;
         color: rgb(245, 245, 245);
-        text-align: center;
+
 
       }
       button{
@@ -41,7 +38,7 @@ if(!isset($_SESSION['user_login'])){
       cursor: pointer;
       background: #2753e4; 
       margin-top: 25% ;
-      margin-left: 38%;
+      margin-left: 43%;
       color: aliceblue;
       }
       button:hover{
@@ -57,11 +54,9 @@ if(!isset($_SESSION['user_login'])){
 
 <body>
     <div id="container">
-    <h2>You are in!</h2>
+    <h2>You are in! There is not much to do here at this time, Check back later! :-)</h2>
   </div>
-
 /*Dear<?php echo $_SESSION['user_login']?>, */
-
    <div >
   <a href="logout.php"><button>Logout</button></a>
   </div>

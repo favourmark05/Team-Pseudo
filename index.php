@@ -9,10 +9,9 @@ if(count($_POST)>0) {
 	//$confirmpassword = $_POST["confirmpassword"];
 
 
-		 
+	
 	if(in_array($email ,array_column($info, 'email')) && in_array($password, array_column($info, "password"))){
-
-		// $name = $info[0]->name;		
+		//$warning = "This email has been registered";
 		// $name = $info->name;
 		$loggedIn = "Log in successful";
 		session_start();
@@ -34,11 +33,11 @@ if(count($_POST)>0) {
 </head>
 <body>
 		<div class="content">
-			<h2>Log In</h2>
+			<h2>Login</h2>
 			<form name="frmUser" method="post" action="" method="POST" class="container">
 				<div class="message"><?php if($warning!="") { echo $warning; } ?></div>
-				<input type="text" name="email" placeholder="email" required="">
-				<input type="password" name="password" placeholder="password" required="">
+				<input type="email" name="email" placeholder="email" required>
+				<input type="password" name="password" placeholder="password" required>
 				<input style="border: 0; width: 280px; padding: 14px 10px; border-radius: 20px; background: #205c70; color: white;" class="loginbutton" type="submit" name="submit" value="Login">	
 				<div class="successmessage"><?php if($loggedIn!="") { echo $loggedIn; } ?></div>
 				<p>New here? <a href="registration.php">Sign Up</a></p>

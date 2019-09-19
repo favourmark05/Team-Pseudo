@@ -6,7 +6,7 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background: url(/assets/background.jpg);
+			background: url(https://res.cloudinary.com/placeholder30/image/upload/v1568910019/HNG/glenn-carstens-peters-P1qyEf1g0HU-unsplash_buhie0.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -32,7 +32,7 @@
 			cursor: pointer;
 		}
 
-		.content input[type="text"] , .content [type="password"] {
+		.content input[type="text"] , .content [type="password"], .content input[type="email"] {
 			border: 0;
 			background: none;
 			display: block;
@@ -47,33 +47,34 @@
 			cursor: pointer;
 		}
 
-		.content input[type="text"]:hover, .content input[type="password"]:hover {
+		.content input[type="text"]:hover, .content input[type="password"]:hover, .content input[type="email"]:hover {
 			width: 300px;
 			border-color: 
 		}
 
 
-		.content input[type="text"]:focus, .content input[type="password"]:focus {
+		.content input[type="text"]:focus, .content input[type="password"]:focus, .content input[type="email"]:focus {
 			border: 2px solid #092933;
 			color: #205c70;
 		}
 
 
 		.content input[type="submit"] {
-			border: 0;
-			width: 280px;
-			padding: 14px 10px;
-			border-radius: 20px;
-			background: #205c70;
-			color: white;
+			border: 0 !important;
+			width: 280px !important;
+			padding: 14px 10px !important;
+			border-radius: 20px !important;
+			background: #205c70 !important;
+			color: white !important;
 		}
 
 		.content input[type="submit"]:hover {
-			background: #092933;
-			color: #205c70;
-			font-weight: 500;
+			background: #092933 !important;
+			color: #205c70 !important;
+			font-weight: 500 !important;
 		}
 
-		.loginbutton{
-			 
+		a{
+			text-decoration: none;
+    		color: steelblue;
 		}
