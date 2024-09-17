@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   background: url(https://res.cloudinary.com/placeholder30/image/upload/v1568910019/HNG/glenn-carstens-peters-P1qyEf1g0HU-unsplash_buhie0.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   font-family: 'Nunito', sans-serif;
+}
+
+
+.container{
+    background: #184453;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    padding: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+input{
+    margin: 20px auto;
+    border: 0;
+    text-align: center;
+    display: block;
+    padding: 14px 10px;
+    width: 300px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+input[type= "submit"]{
+    background: #215B6F;
+    margin-bottom: 3px;
+}
+input[type= "submit"]:hover{
+    color: whitesmoke;
+}
+h1{
+    color: white;
+}
+
+p{
+  /*  color: antiquewhite;
+    padding-top: 0px;
+    border-top: 0px;
+    margin-top: 0px; 
+    text-align: right;
+    font-size: 12px;*/
+}
+
+a{
+    text-decoration: none;
+    color: steelblue;
+}
+
+.content input[type="text"]:hover, .content input[type="password"]:hover, .content input[type="email"]:hover {
+      width: 300px;
+      border-color: 
+    }
+
+
+    .content input[type="text"]:focus, .content input[type="password"]:focus, .content input[type="email"]:focus {
+      border: 2px solid #092933;
+      color: #205c70;
+    }
